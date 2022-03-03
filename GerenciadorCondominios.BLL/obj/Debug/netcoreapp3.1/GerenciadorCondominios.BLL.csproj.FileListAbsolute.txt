@@ -1,7 +1,6 @@
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.BLL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.deps.json
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.BLL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.dll
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.BLL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.pdb
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.csproj.AssemblyReference.cache
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.AssemblyInfoInputs.cache
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.AssemblyInfo.cs

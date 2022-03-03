@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "0Tvw62BApVx/k+qM/pHytMNstY47/EvtG10g7CerxhQ8+5lp3uBJvLH+F3v7GmiqBBXASQOZTcjMqyIDDRoO6w==",
+  "dgSpecHash": "Okiza0YF4x8nxgT0Ht0nPNdzDo2/SdKzM64G6PgzQL71vIeERfXE2GW5LwaVacKv0d5LVo8LAbi4qOzzIa1DaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\guilu\\Desktop\\CSharp\\Gerenciador_de_Condominios\\GerenciadorCondominios.DAL\\GerenciadorCondominios.DAL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.17\\microsoft.aspnetcore.cryptography.internal.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.17\\microsoft.aspnetcore.cryptography.keyderivation.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.17\\microsoft.extensions.caching.abstractions.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.17\\microsoft.extensions.configuration.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.17\\microsoft.extensions.configuration.abstractions.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.17\\microsoft.extensions.configuration.binder.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.17\\microsoft.extensions.dependencyinjection.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.17\\microsoft.extensions.dependencyinjection.abstractions.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.17\\microsoft.extensions.identity.core.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.17\\microsoft.extensions.identity.stores.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.logging\\3.1.17\\microsoft.extensions.logging.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.17\\microsoft.extensions.logging.abstractions.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.options\\3.1.17\\microsoft.extensions.options.3.1.17.nupkg.sha512",
+    "C:\\Users\\guilu\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.17\\microsoft.extensions.primitives.3.1.17.nupkg.sha512"
+  ],
   "logs": []
 }
