@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GerenciadorCondominios.DAL.Mappings
 {
-    class UsuarioMap : IEntityTypeConfiguration<Usuario>
+    public class UsuarioMap : IEntityTypeConfiguration<Usuario>
     {
         public void Configure(EntityTypeBuilder<Usuario> builder)
         {

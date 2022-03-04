@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GerenciadorCondominios.DAL.Mappings
 {
-    class FuncaoMap : IEntityTypeConfiguration<Funcao>
+    public class FuncaoMap : IEntityTypeConfiguration<Funcao>
     {
         public void Configure(EntityTypeBuilder<Funcao> builder)
         {

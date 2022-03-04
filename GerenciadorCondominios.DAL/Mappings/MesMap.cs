@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GerenciadorCondominios.DAL.Mappings
 {
-    class MesMap : IEntityTypeConfiguration<Mes>
+    public class MesMap : IEntityTypeConfiguration<Mes>
     {
         public void Configure(EntityTypeBuilder<Mes> builder)
         {

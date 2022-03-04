@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GerenciadorCondominios.DAL.Mappings
 {
-    class VeiculoMap : IEntityTypeConfiguration<Veiculo>
+    public class VeiculoMap : IEntityTypeConfiguration<Veiculo>
     {
         public void Configure(EntityTypeBuilder<Veiculo> builder)
         {
