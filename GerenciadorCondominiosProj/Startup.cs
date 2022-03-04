@@ -26,7 +26,7 @@ namespace GerenciadorCondominios
         public void ConfigureServices(IServiceCollection services)
         {
             var sqlConnectString = Configuration.GetConnectionString("DbSqlServer");
-            //services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(sqlConnectString));
+            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(sqlConnectString));
 
             services.AddControllersWithViews();
         }
