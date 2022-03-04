@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GerenciadorCondominios.BLL.Models
 {
-    //Classe que determina as ações de cada User. A chave para distinção é uma String
+    ////Classe que determina o cada Função/tipo de usuário. Sua PK é do tipo String.
     public class Funcao : IdentityRole<string>
     {
         public string Descricao { get; set; }
