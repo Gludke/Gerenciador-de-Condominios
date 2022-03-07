@@ -3,6 +3,7 @@ using GerenciadorCondominios.DAL.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,33 +23,66 @@ namespace GerenciadorCondominios.DAL.Repositories
 
         #region "CONSTRUCTORS"
 
-        public UsuarioRepositorio(ApplicationContext applicationContext) : base(applicationContext)
+        public UsuarioRepositorio(ApplicationContext applicationContext,
+            UserManager<Usuario> gerenciadorUsuario,
+            SignInManager<Usuario> gerenciadorLogin
+            ) : base(applicationContext)
         {
+            _context = applicationContext;
+            gerenciadorUsuario = _gerenciadorUsuario;
+            gerenciadorLogin = _gerenciadorLogin;
         }
 
         #endregion
 
         #region "METHODS"
 
-        public Task<IdentityResult> CriarUsuario(Usuario usuario, string senha)
+        public async Task<IdentityResult> CriarUsuario(Usuario usuario, string senha)
         {
-            
-            throw new NotImplementedException();
+            try
+            {
+                return await _gerenciadorUsuario.CreateAsync(usuario, senha);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public Task IncluirUsuarioEmFuncao(Usuario usuario, string funcao)
+        public async Task IncluirUsuarioEmFuncao(Usuario usuario, string funcao)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _gerenciadorUsuario.AddToRoleAsync(usuario, funcao);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public Task LogarUsuario(Usuario usuario, bool lembrar)
+        public async Task LogarUsuario(Usuario usuario, bool lembrar)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _gerenciadorLogin.SignInAsync(usuario, lembrar);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public int VerificaSeExisteRegistro()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Usuarios.Count();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         #endregion
