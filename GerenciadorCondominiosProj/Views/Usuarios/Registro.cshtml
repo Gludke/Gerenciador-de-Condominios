@@ -1,0 +1,132 @@
+﻿@model RegistroUsuarioViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registro</title>
+
+    @* Somente funciona no ambiente 'Development' *@
+    <environment include="Development">
+        @*Não se usa bibliotecas minificadas (.min) em desenvolvimento, pois é mais difícil debugar*@
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+
+    @* Não funciona no ambiente 'Development' *@
+    <environment exclude="Development">
+        @*Não se usa bibliotecas minificadas (.min) em desenvolvimento, pois é mais difícil debugar*@
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="~/css/site.min.css" rel="stylesheet" />
+    </environment>
+</head>
+
+<body class="corpo">
+    <!--FORMULÁRIO DE REGISTRO-->
+    <div class="registroform">
+        <div class="center-align">
+            <h4><i class="large material-icons">account_circle</i></h4>
+            <h5>Novo Morador</h5>
+        </div>
+
+        <div>
+            @* 'enctype' - Necessário para fazer o upload da imagem*@
+            <form asp-action="Registro" enctype="multipart/form-data" method="post">
+                <div class="campos">
+                    @*Div dos erros*@
+                    <div class="red-text text-darken-4" asp-validation-summary="ModelOnly"></div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <!--'validate' - Une os efeitos visuais do label e do input atrvés do ID -->
+                            <input asp-for="@Model.Nome" class="validate" id="Nome" />
+                            <label asp-for="@Model.Nome" id="Nome"></label>
+                            <span asp-validation-for="@Model.Nome" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="@Model.CPF" class="validate" id="CPF" />
+                            <label asp-for="@Model.CPF" id="CPF"></label>
+                            <span asp-validation-for="@Model.CPF" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="@Model.Telefone" class="validate" id="Telefone" />
+                            <label asp-for="@Model.Telefone" id="Telefone"></label>
+                            <span asp-validation-for="@Model.Telefone" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                    <!--upload da imagem-->
+                    <div class="row">
+                        <div class="file-field input-field col s12">
+                            <div class="btn-small">
+                                <span>Selecione sua foto</span>
+                                <input asp-for="@Model.Foto" type="file" class="validate" id="Foto" />
+                            </div>
+
+                            <!--Vai mostrar o caminho e nome do arquivo upado-->
+                            <div class="file-path-wrapper"></div>
+                            <input class="file-path validate" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="@Model.Email" class="validate" type="email" id="Email" />
+                            <label asp-for="@Model.Email" id="Email"></label>
+                            <span asp-validation-for="@Model.Email" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="@Model.Senha" class="validate" type="password" id="Senha" />
+                            <label asp-for="@Model.Senha" id="Senha"></label>
+                            <span asp-validation-for="@Model.Senha" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="@Model.SenhaConfirmada" class="validate" type="password" id="SenhaConfirmada" />
+                            <label asp-for="@Model.SenhaConfirmada" id="SenhaConfirmada"></label>
+                            <span asp-validation-for="@Model.SenhaConfirmada" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Botões de confirmar e voltar-->
+                <div class="botoes">
+                    <button class="waves-efect waves-light btn-small green darken-4" type="submit">Registrar</button> &emsp;
+                    <a asp-controller="Usuarios" asp-action="Login">Já possuo uma conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    @* Somente funciona no ambiente 'Development' *@
+    <environment include="Development">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+    </environment>
+
+    @* Não funciona no ambiente 'Development' *@
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </environment>
+</body>
+</html>
