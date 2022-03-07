@@ -1,16 +1,5 @@
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.deps.json
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.runtimeconfig.json
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.runtimeconfig.dev.json
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.dll
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.pdb
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.dll
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.pdb
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csproj.AssemblyReference.cache
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.AssemblyInfoInputs.cache
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.AssemblyInfo.cs
 C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csproj.CoreCompileInputs.cache
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csproj.CopyComplete
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.dll
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.pdb
-C:\Users\guilu\Desktop\CSharp\Gerenciador_de_Condominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.genruntimeconfig.cache
