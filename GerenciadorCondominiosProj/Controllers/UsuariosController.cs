@@ -93,7 +93,7 @@ namespace GerenciadorCondominios.Controllers
                         return RedirectToAction("Index", "Usuarios");
                     }
                 }
-                //Se houver outros usuário cadastrados:
+                //Se houver outros usuários cadastrados:
                 user.UserName = model.Nome;
                 user.CPF = model.CPF;
                 user.Email = model.Email;

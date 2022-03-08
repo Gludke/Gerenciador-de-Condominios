@@ -2,6 +2,7 @@ using GerenciadorCondominios.BLL.Models;
 using GerenciadorCondominios.DAL;
 using GerenciadorCondominios.DAL.Interfaces;
 using GerenciadorCondominios.DAL.Repositories;
+using GerenciadorCondominios.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,7 +38,11 @@ namespace GerenciadorCondominios
             services.AddAuthentication();
             services.AddAuthorization();
 
-            services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
+            //Métodos de extensão que criamos para configurações
+            services.ConfigurarRepositorios();
+            services.ConfigurarCookies();
+            services.ConfigurarNomeUsuario();
+            services.ConfigurarSenhaUsuario();
 
             services.AddControllersWithViews();
         }
@@ -61,7 +66,6 @@ namespace GerenciadorCondominios
             app.UseRouting();
 
             app.UseAuthentication();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
