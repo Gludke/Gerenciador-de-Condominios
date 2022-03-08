@@ -29,8 +29,8 @@ namespace GerenciadorCondominios.DAL.Repositories
             ) : base(applicationContext)
         {
             _context = applicationContext;
-            gerenciadorUsuario = _gerenciadorUsuario;
-            gerenciadorLogin = _gerenciadorLogin;
+            _gerenciadorUsuario = gerenciadorUsuario;
+            _gerenciadorLogin = gerenciadorLogin;
         }
 
         #endregion

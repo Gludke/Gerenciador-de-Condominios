@@ -120,5 +120,11 @@ namespace GerenciadorCondominios.Controllers
             //Dados do Usuário não são válidos. 
             return View(model);
         }
+
+        [HttpGet]
+        public IActionResult Analise(string nome)
+        {
+            return View(nome);
+        }
     }
 }

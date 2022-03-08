@@ -1,3 +1,4 @@
+using GerenciadorCondominios.BLL.Models;
 using GerenciadorCondominios.DAL;
 using GerenciadorCondominios.DAL.Interfaces;
 using GerenciadorCondominios.DAL.Repositories;
@@ -29,6 +30,12 @@ namespace GerenciadorCondominios
         {
             var sqlConnectString = Configuration.GetConnectionString("DbSqlServer");
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(sqlConnectString));
+            //Informar a classe de usuário, a classe de funções/regras e onde ocorre o armazenamento.
+            services.AddIdentity<Usuario, Funcao>().AddEntityFrameworkStores<ApplicationContext>();
+
+            //Adicionando serviços de Autenticação e Autorização
+            services.AddAuthentication();
+            services.AddAuthorization();
 
             services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
 
@@ -52,6 +59,8 @@ namespace GerenciadorCondominios
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

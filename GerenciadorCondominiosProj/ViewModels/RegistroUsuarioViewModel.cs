@@ -31,6 +31,7 @@ namespace GerenciadorCondominios.ViewModels
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(40, ErrorMessage = "Use menos caracteres")]
+        [Display(Name = "Confirme sua senha")]
         [DataType(DataType.Password)]
         [Compare("Senha", ErrorMessage = "As senhas não são iguais")]
         public string SenhaConfirmada { get; set; }
